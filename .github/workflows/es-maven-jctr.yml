@@ -26,5 +26,7 @@ jobs:
       run: mvn clean
     - name: 3. Compile with Maven
       run: mvn compile
-    - name: 4. Build with Maven
+    - name: 4. Test with Maven
+      run: mvn test
+    - name: 5. Build with Maven
       run: mvn -B package --file pom.xml
