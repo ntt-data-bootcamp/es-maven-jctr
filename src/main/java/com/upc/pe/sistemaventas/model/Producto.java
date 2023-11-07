@@ -12,11 +12,11 @@ import javax.validation.constraints.Size;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id
+    private Integer id;
 
     @NotNull(message = "Debes especificar el nombre del Producto")
     @Size(min = 1, max = 50, message = "El nombre debe medir entre 1 y 50")
-    private String nombre
+    private String nombre;
 
     @NotNull(message = "Debes especificar el código del Producto")
     @Size(min = 1, max = 50, message = "El código debe medir entre 1 y 50")
